@@ -166,26 +166,38 @@ void Patient::DoPatientRelatedWork(){
 }
 std::pair<std::pair<Disease,char*>,char*>  Patient::TakeIdReturnDiseaseOfThePatientAndPatientAppointmentDateAndPatientAppointmentDay(){
     //return std::make_pair(std::make_pair(Disease(),nullptr),(nullptr));
-    int IdToCheckAppointment;
-    std::cout<<"Enter the Id of the Patient you want to Arrange Appointment For: ";
-    std::cin>>IdToCheckAppointment;
+    std::string filePath = PatientFile;
 
-    std::ifstream IfPatient;
-    IfPatient.open(PatientFile,std::ios::in|std::ios::binary);
+    // Create an ifstream object to check the existence of the file
+    std::ifstream fileStream(filePath);
     std::pair<std::pair<Disease,char*>,char*>ans=std::make_pair(std::make_pair(Disease(),nullptr),(nullptr));
-    while(!IfPatient.eof()){
+    // Check if the file exists
+    if (fileStream.good()) {
+        int IdToCheckAppointment;
+        std::cout<<"Enter the Id of the Patient you want to Arrange Appointment For: ";
+        std::cin>>IdToCheckAppointment;
 
-        IfPatient.read((char*)this,sizeof(Patient));
-        if(IfPatient){
-            if(IdToCheckAppointment==PatientId){
-                ans = std::make_pair(std::make_pair(PatientDisease,AppointmentDate),AppointmentDay);
+        std::ifstream IfPatient;
+        IfPatient.open(PatientFile,std::ios::in|std::ios::binary);
+
+        while(!IfPatient.eof()){
+
+            IfPatient.read((char*)this,sizeof(Patient));
+            if(IfPatient){
+                if(IdToCheckAppointment==PatientId){
+                    ans = std::make_pair(std::make_pair(PatientDisease,AppointmentDate),AppointmentDay);
+                }
             }
+
         }
 
+        IfPatient.close();
+        if(ans.second== nullptr||ans.first.second== nullptr)
+            std::cout<<"Record not Found "<<line;
+    }else{
+        std::cout<<"There is no patients"<<line;
     }
-
-    IfPatient.close();
-    if(ans.second== nullptr||ans.first.second== nullptr)
-        std::cout<<"Record not Found "<<line;
+    // Close the file stream
+    fileStream.close();
     return ans;
 }
