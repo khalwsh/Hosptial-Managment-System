@@ -1,0 +1,3 @@
+D:/c++_projects/Hosptial-Managment-System new version/cmake-build-debug/CMakeFiles/Hosptial_System.dir
+D:/c++_projects/Hosptial-Managment-System new version/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/c++_projects/Hosptial-Managment-System new version/cmake-build-debug/CMakeFiles/rebuild_cache.dir

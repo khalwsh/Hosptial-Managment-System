@@ -1,0 +1,15 @@
+# ninja log v5
+9	687	7272254648922675	CMakeFiles/Hosptial_System.dir/Patient.cpp.obj	1edc844716895b25
+3	464	7272246461504129	CMakeFiles/Hosptial_System.dir/main.cpp.obj	df668aad27ed9edf
+502	618	7272254861402620	Hosptial_System.exe	4e2e4d98fc88f9db
+3	556	7271516855518067	CMakeFiles/Hosptial_System.dir/Disease.cpp.obj	64f4d804b9a48a0f
+40	4778	7271504870705845	CMakeFiles/Hosptial_System.dir/Person.cpp.obj	86b639cc97099d13
+5	1683	7272242677423938	CMakeFiles/Hosptial_System.dir/Available.cpp.obj	8ea395a473854383
+4	501	7272254860263262	CMakeFiles/Hosptial_System.dir/Doctor.cpp.obj	692cdcdd8f91467
+18	5496	7272265130568556	CMakeFiles/Hosptial_System.dir/main.cpp.obj	9eb7f807044af492
+9	5755	7272265132265475	CMakeFiles/Hosptial_System.dir/Person.cpp.obj	76124f6638abb1f4
+33	5782	7272265132977508	CMakeFiles/Hosptial_System.dir/Doctor.cpp.obj	6f56b1c4d35d0cff
+48	5967	7272265133403027	CMakeFiles/Hosptial_System.dir/Disease.cpp.obj	28cd2bbf6bcb74af
+26	5968	7272265133557363	CMakeFiles/Hosptial_System.dir/Patient.cpp.obj	3469d1e6750d83a2
+41	5969	7272265133623659	CMakeFiles/Hosptial_System.dir/Available.cpp.obj	db486d41b2de3724
+5969	7001	7272265145615057	Hosptial_System.exe	4e2e4d98fc88f9db
