@@ -162,14 +162,25 @@ void Doctor::DoDoctorRelatedWork(){
 
 }
 void Doctor::PrintingDoctorsThatCanTreatCertainPatient(const Disease & d,char* AppointmentDate,char*AppointmentDay){
-    std::ifstream ReadDataFromDataBase(DoctorFile,std::ios::binary|std::ios::in);
-    while(!ReadDataFromDataBase.eof()){
-        if(ReadDataFromDataBase.read((char*)this,sizeof(Doctor))){
-            int PatientDate=available.ConvertHHMMSSToMinutes(AppointmentDate);
-            int SF=available.ConvertHHMMSSToMinutes(available.ShiftStart);
-            int EF=available.ConvertHHMMSSToMinutes(available.ShiftEnd);
-            if(DoctorSpecialization == d && SF <= PatientDate && EF >= PatientDate && available.DayOfWeek[available.DayMapping(AppointmentDay)] )
-               ShowDoctorData();
+    std::string filePath = DoctorFile;
+
+    // Create an ifstream object to check the existence of the file
+    std::ifstream fileStream(filePath);
+
+    // Check if the file exists
+    if (fileStream.good()) {
+        std::ifstream ReadDataFromDataBase(DoctorFile,std::ios::binary|std::ios::in);
+        while(!ReadDataFromDataBase.eof()){
+            if(ReadDataFromDataBase.read((char*)this,sizeof(Doctor))){
+                int PatientDate=available.ConvertHHMMSSToMinutes(AppointmentDate);
+                int SF=available.ConvertHHMMSSToMinutes(available.ShiftStart);
+                int EF=available.ConvertHHMMSSToMinutes(available.ShiftEnd);
+                if(DoctorSpecialization == d && SF <= PatientDate && EF >= PatientDate && available.DayOfWeek[available.DayMapping(AppointmentDay)] )
+                    ShowDoctorData();
+            }
         }
+    }else{
+        std::cout<<"There is no Doctors"<<line;
     }
+    fileStream.close();
 }
