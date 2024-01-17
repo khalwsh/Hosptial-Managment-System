@@ -2,7 +2,7 @@
 Console app Simulates Hosptial-Managment-System application and connected to local database (saving data into local files)
 ## UML Diagram:
 
-<img src="https://github.com/khalwsh/Hosptial-Managment-System/blob/main/Hospital%20System/Screenshot%20(240).png" width = 900>
+<img src="https://github.com/khalwsh/Hosptial-Managment-System/blob/main/Hosptial-Managment-System/Screenshot%20(240).png",width=900>
 
 [UML]([https://lucid.app/lucidchart/5c46f23f-b866-4d54-9cd8-fab2f6c43570/edit?invitationId=inv_bc5f673b-c1f7-4bef-8540-b9ff4c36dd6a&page=HWEp-vi-RSFO](https://github.com/khalwsh/Hosptial-Managment-System/blob/main/Hosptial-Managment-System/Screenshot%20(240).png))
 ## Big Picture
