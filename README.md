@@ -78,4 +78,4 @@ Data Persistence:
 -Changes made to patient and doctor data are stored in the local database files.
 
 ## Video Explaining The Project
-[![Video on youtube](https://github.com/khalwsh/Hosptial-Managment-System/blob/main/Hospital%20System/Web%20capture_17-1-2024_132533_www.youtube.com.jpeg)](https://www.youtube.com/watch?si=09bWFZ-5IOU646bq&v=HCK4cW0Mtbk&feature=youtu.be)
+[![Video on youtube](https://github.com/khalwsh/Hosptial-Managment-System/blob/main/Hosptial-Managment-System/Web%20capture_17-1-2024_132533_www.youtube.com.jpeg)](https://www.youtube.com/watch?si=09bWFZ-5IOU646bq&v=HCK4cW0Mtbk&feature=youtu.be)
