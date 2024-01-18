@@ -1,6 +1,7 @@
 
 #ifndef HOSPTIAL_SYSTEM_AVAILABLE_H
 #define HOSPTIAL_SYSTEM_AVAILABLE_H
+#include <algorithm>
 #include <iostream>
 #include <ctime>
 //#include "Doctor.h"
