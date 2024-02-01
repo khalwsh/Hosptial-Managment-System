@@ -2,7 +2,7 @@
 Console app Simulates Hosptial-Managment-System application and connected to local database (saving data into local files)
 ## UML Diagram:
 
-<img src="https://github.com/khalwsh/Hosptial-Managment-System/blob/main/Hosptial-Managment-System/Screenshot%20(240).png" width=900>
+<img src="https://github.com/khalwsh/Hosptial-Managment-System/blob/main/Hosptial-Managment-System/Team%20document%20-%20Page%201%20(1).png" width=900>
 
 ## Big Picture
 Manage Appointments between doctors and Patients and easily {searching,discharge,adding} information from database.
